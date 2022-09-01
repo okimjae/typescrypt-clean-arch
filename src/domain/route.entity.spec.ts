@@ -65,6 +65,7 @@ describe("Route Tests", () => {
     };
 
     const route = new Route(routeProps);
+    expect(route.id).toBeDefined()
     const points = [{ lat: 10, lng: 20 }];
     route.updatePoints(points);
     expect(route.points).toHaveLength(1);

@@ -19,6 +19,7 @@ type CreateRouteInput = {
 };
 
 type CreateRouteOutput = {
+  id: String;
   title: string;
   startPosition: LatLng;
   endPosition: LatLng;
